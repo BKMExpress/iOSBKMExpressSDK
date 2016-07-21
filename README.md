@@ -1,15 +1,15 @@
 ##NE İŞE YARAR?
-> Hizmetinize sunulan Android Kart Eşleme SDK paketi, kullanıcının BKMExpress ile yapacağı hızlı ödemeler için, işyeri uygulamasından çıkmadan, kart eşleme seçeneği sunmaktadır.
+> Hizmetinize sunulan iOS Kart Eşleme SDK paketi, kullanıcının BKMExpress ile yapacağı hızlı ödemeler için, işyeri uygulamasından çıkmadan, kart eşleme seçeneği sunmaktadır.
 
 ##SİSTEM GEREKSİNİMLERİ NELERDİR?
 
- *  Android Kart Eşleme SDK paketi Android Studio ile geliştirilen uygulamalar baz alınarak tasarlanmıştır. 
- *  Min SDK Version 15 desteklenmektedir.
+ *  Min iOS-7 desteklenmektedir.
+ *  iPhone cihazlar desteklenmektedir. 
 
 ##NASIL ÇALIŞIR?
 
 Işyerleri BKM Express entegrasyonlarını tamamlayarak gerekli **API Key**lerini almalıdırlar. Bu API Key daha sonra
-Android Kart Eşleme paketinin kullanılabilmesi için gerekmektedir. İşyeri servis uygulamaları, BKMExpress core servislerine bağlanarak kendileri için hazırlanan **TOKEN**'ı ve **API Key**'i sunulan methodlara parametrik olarak ileterek, Kart Ekleme akışı başlatılır. Daha detaylı bilgi ilerleyen kısımlarda verilecektir.
+iOS Kart Eşleme paketinin kullanılabilmesi için gerekmektedir. İşyeri servis uygulamaları, BKMExpress core servislerine bağlanarak kendileri için hazırlanan **TOKEN**'ı ve **API Key**'i sunulan methodlara parametrik olarak ileterek, Kart Ekleme akışı başlatılır.
 
 ##GRADLE ENTEGRASYONU
 
