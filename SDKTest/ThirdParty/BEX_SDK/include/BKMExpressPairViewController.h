@@ -1,6 +1,6 @@
 //
 //  BKMExpressPairViewController.h
-//  BKMExpressSDK v1.0
+//  BKMExpressSDK
 //
 //  Created by BKM
 //  Copyright © 2016 Bankalararası Kart Merkezi. All rights reserved.
