@@ -29,7 +29,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
  SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
 
-* BEX.bundle, include klasörü ve libBKMExpressSDK.a  dosyalarını projeye eklenmelidir.
+* BEX.bundle, include klasörü ve libBKMExpressSDK.a  dosyaları projeye eklenmelidir.
 
 * Eklenecek uygulamanın Build Settings ayarlarından Other Linker Flags anahtarına –ObjC değeri yazılmalıdır.
 
@@ -37,7 +37,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 ###<BKMExpressPairingDelegate>
-        
+
     -  (void)bkmExpressDidCompletePairing; //Success 
 
     -  (void)bkmExpressDidCancel;; //Cancel
@@ -48,6 +48,8 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
     #define BKM_EXPRESS_SDK_API_KEY @"given by BKM"
     #define TOKEN @"token will be taken after the merchant integration"
+
+    @interface ViewController () <BKMExpressPairingDelegate>
 
     - (IBAction)tapBEXPaymentButton:(id)sender {
        BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:TOKEN withApiKey:BKM_EXPRESS_SDK_API_KEY delegate:self];
