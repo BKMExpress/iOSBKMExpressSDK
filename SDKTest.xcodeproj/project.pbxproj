@@ -13,8 +13,8 @@
 		B742E3B91D1A85A200D44B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B742E3B71D1A85A200D44B9E /* Main.storyboard */; };
 		B742E3BB1D1A85A200D44B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B742E3BA1D1A85A200D44B9E /* Assets.xcassets */; };
 		B742E3BE1D1A85A200D44B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B742E3BC1D1A85A200D44B9E /* LaunchScreen.storyboard */; };
-		B7E73B6E1D3F609600AD2AC9 /* BEX.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7E73B6A1D3F609600AD2AC9 /* BEX.bundle */; };
-		B7E73B6F1D3F609600AD2AC9 /* libBKMExpressSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E73B6D1D3F609600AD2AC9 /* libBKMExpressSDK.a */; };
+		B7752C8A1D76CAA4002CE04F /* BEX.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7752C861D76CAA4002CE04F /* BEX.bundle */; };
+		B7752C8B1D76CAA4002CE04F /* libBKMExpressSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7752C891D76CAA4002CE04F /* libBKMExpressSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		B742E3BA1D1A85A200D44B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B742E3BD1D1A85A200D44B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B742E3BF1D1A85A200D44B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7E73B6A1D3F609600AD2AC9 /* BEX.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BEX.bundle; sourceTree = "<group>"; };
-		B7E73B6C1D3F609600AD2AC9 /* BKMExpressPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPairViewController.h; sourceTree = "<group>"; };
-		B7E73B6D1D3F609600AD2AC9 /* libBKMExpressSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBKMExpressSDK.a; sourceTree = "<group>"; };
+		B7752C861D76CAA4002CE04F /* BEX.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BEX.bundle; sourceTree = "<group>"; };
+		B7752C881D76CAA4002CE04F /* BKMExpressPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPairViewController.h; sourceTree = "<group>"; };
+		B7752C891D76CAA4002CE04F /* libBKMExpressSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBKMExpressSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E73B6F1D3F609600AD2AC9 /* libBKMExpressSDK.a in Frameworks */,
+				B7752C8B1D76CAA4002CE04F /* libBKMExpressSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +86,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B7752C871D76CAA4002CE04F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B7752C881D76CAA4002CE04F /* BKMExpressPairViewController.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		B7E73B681D3F609600AD2AC9 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,19 +105,11 @@
 		B7E73B691D3F609600AD2AC9 /* BEX_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				B7E73B6A1D3F609600AD2AC9 /* BEX.bundle */,
-				B7E73B6B1D3F609600AD2AC9 /* include */,
-				B7E73B6D1D3F609600AD2AC9 /* libBKMExpressSDK.a */,
+				B7752C861D76CAA4002CE04F /* BEX.bundle */,
+				B7752C871D76CAA4002CE04F /* include */,
+				B7752C891D76CAA4002CE04F /* libBKMExpressSDK.a */,
 			);
 			path = BEX_SDK;
-			sourceTree = "<group>";
-		};
-		B7E73B6B1D3F609600AD2AC9 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B7E73B6C1D3F609600AD2AC9 /* BKMExpressPairViewController.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B742E3BE1D1A85A200D44B9E /* LaunchScreen.storyboard in Resources */,
-				B7E73B6E1D3F609600AD2AC9 /* BEX.bundle in Resources */,
+				B7752C8A1D76CAA4002CE04F /* BEX.bundle in Resources */,
 				B742E3BB1D1A85A200D44B9E /* Assets.xcassets in Resources */,
 				B742E3B91D1A85A200D44B9E /* Main.storyboard in Resources */,
 			);
