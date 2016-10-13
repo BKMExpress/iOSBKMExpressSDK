@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,8 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnR-of-oZg">
-                                <rect key="frame" x="16" y="290" width="343" height="87"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="CIA-co-i6d"/>
                                     <constraint firstAttribute="height" constant="87" id="i5p-cn-0D3"/>
@@ -29,14 +30,26 @@
                                     <action selector="tapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Fa-vD-32s"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-KE-7Wc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="qHo-h7-QKH"/>
+                                    <constraint firstAttribute="height" constant="87" id="sMa-vD-SZS"/>
+                                </constraints>
+                                <state key="normal" image="bkm-ode-1"/>
+                                <connections>
+                                    <action selector="tapPaymentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHf-o3-56r"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hzH-KE-7Wc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9R3-0q-c5b"/>
                             <constraint firstItem="MnR-of-oZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AGt-g1-yTC"/>
+                            <constraint firstItem="hzH-KE-7Wc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Apq-fK-PVp"/>
                             <constraint firstItem="MnR-of-oZg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HLN-if-RCi"/>
+                            <constraint firstItem="MnR-of-oZg" firstAttribute="top" secondItem="hzH-KE-7Wc" secondAttribute="bottom" constant="45" id="t8q-98-0GA"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,5 +58,6 @@
     </scenes>
     <resources>
         <image name="bkm-ode" width="343" height="87"/>
+        <image name="bkm-ode-1" width="248" height="98"/>
     </resources>
 </document>

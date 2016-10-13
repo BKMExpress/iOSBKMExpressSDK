@@ -28,6 +28,7 @@
 		B742E3BA1D1A85A200D44B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B742E3BD1D1A85A200D44B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B742E3BF1D1A85A200D44B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B762CAFE1DAFE7BA0096CD54 /* BKMExpressPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPaymentViewController.h; sourceTree = "<group>"; };
 		B7752C861D76CAA4002CE04F /* BEX.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BEX.bundle; sourceTree = "<group>"; };
 		B7752C881D76CAA4002CE04F /* BKMExpressPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPairViewController.h; sourceTree = "<group>"; };
 		B7752C891D76CAA4002CE04F /* libBKMExpressSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBKMExpressSDK.a; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		B7752C871D76CAA4002CE04F /* include */ = {
 			isa = PBXGroup;
 			children = (
+				B762CAFE1DAFE7BA0096CD54 /* BKMExpressPaymentViewController.h */,
 				B7752C881D76CAA4002CE04F /* BKMExpressPairViewController.h */,
 			);
 			path = include;

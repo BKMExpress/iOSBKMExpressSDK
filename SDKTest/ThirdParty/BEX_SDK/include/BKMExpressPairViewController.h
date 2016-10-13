@@ -11,8 +11,9 @@
 @protocol BKMExpressPairingDelegate <NSObject>
 
 @required
-- (void)bkmExpressDidCompletePairing;
-- (void)bkmExpressDidCancel;
+- (void)bkmExpressPairingDidComplete;
+- (void)bkmExpressPairingDidCancel;
+- (void)bkmExpressPairingDidFail:(NSError *)error;
 
 @end
 
