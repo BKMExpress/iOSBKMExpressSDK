@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evy-GY-bof">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Evy-GY-bof" secondAttribute="height" multiplier="343:87" id="N7k-o2-VpG"/>
+                                </constraints>
+                                <state key="normal" image="bkm-esles"/>
+                                <connections>
+                                    <action selector="tapPairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whT-mW-rLS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRK-WE-L3E">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="gKy-Gj-0Lh"/>
+                                    <constraint firstAttribute="height" constant="98" id="zpc-53-yrq"/>
+                                </constraints>
+                                <state key="normal" image="bkm-ode"/>
+                                <connections>
+                                    <action selector="tapPaymentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCb-SK-dso"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Evy-GY-bof" secondAttribute="trailing" constant="16" id="Lem-kP-ev8"/>
+                            <constraint firstItem="jRK-WE-L3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f5q-7F-7OJ"/>
+                            <constraint firstItem="jRK-WE-L3E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="nPP-ey-yQY"/>
+                            <constraint firstItem="Evy-GY-bof" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="tgz-pR-vv2"/>
+                            <constraint firstItem="Evy-GY-bof" firstAttribute="top" secondItem="jRK-WE-L3E" secondAttribute="bottom" constant="38.5" id="xp1-07-Wiv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bkm-esles" width="343" height="87"/>
+        <image name="bkm-ode" width="248" height="98"/>
+    </resources>
+</document>
