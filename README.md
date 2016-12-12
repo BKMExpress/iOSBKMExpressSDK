@@ -25,7 +25,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 
-###IOS SDK ENTEGRASYONU
+###IOS OBJECTIVE-C SDK ENTEGRASYONU
 
  SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
 
@@ -46,13 +46,13 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 ### BKMExpressPaymentDelegate
 
-    -  (void)bkmExpressPaymentDidComplete; //Success 
+    -  (void)bkmExpressPaymentDidCompleteWithPOSResult:(BKMPOSResult *)posResult; //Success 
 
     -  (void)bkmExpressPaymentDidCancel; //Cancel
 
     -  (void)bkmExpressPaymentDidFail:(NSError *)error; //Fail
 
-###ÖRNEK ÖDEME AKIŞI KULLANIMI
+###ÖRNEK OBJECTIVE-C ÖDEME AKIŞI KULLANIMI
       
 
     #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
@@ -110,3 +110,70 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     - (void)bkmExpressPairingDidCancel{
        NSLog(@"Card pairing is canceled by user");
     }
+
+
+
+###IOS SWIFT SDK ENTEGRASYONU
+
+ SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
+
+* BEX.bundle, include klasörü ve libBKMExpressSDK.a  dosyaları projeye eklenmelidir.
+
+* Objective C ile geliştiren SDK'yı kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
+  https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
+
+* Eklenecek uygulamanın Build Settings ayarlarından Other Linker Flags anahtarına –ObjC değeri yazılmalıdır.
+
+* BKMExpress SDK arayüzlerinden geri haber alabilmek için BKMExpressPairingDelegate ve BKMExpressPaymentDelegate protokollerinin kullanılması gerekmektedir.
+
+
+### BKMExpressPaymentDelegate
+
+    -  func bkmExpressPaymentDidComplete(with posResult: BKMPOSResult!); //Success 
+
+    -  func bkmExpressPaymentDidCancel(); //Cancel
+
+    -  func bkmExpressPaymentDidFail(_ error: Error!) { //Fail
+
+
+###ÖRNEK SWIFT ÖDEME AKIŞI KULLANIMI
+      
+    let kBKM_EXPRESS_SDK_API_KEY:String = "given by BKM"
+    let kQUICK_PAY_TOKEN:String = "Quick pay token will be given by BKM after the merchant integration"
+    let kPAYMENT_TOKEN:String = "Payment token will be given by BKM after the merchant integration"
+
+    class ViewController: UIViewController , BKMExpressPaymentDelegate {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        let instanceOfCustomObject: BKMExpressPaymentViewController = BKMExpressPaymentViewController(paymentToken: kPAYMENT_TOKEN, withApiKey: kBKM_EXPRESS_SDK_API_KEY, delegate: self)
+
+        instanceOfCustomObject.setEnableDebugMode(true)
+        
+        self.present(instanceOfCustomObject , animated:true,completion: nil)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func bkmExpressPaymentDidComplete(with posResult: BKMPOSResult!) {
+        NSLog("Successful payment with POS message")
+    }
+    
+    func bkmExpressPaymentDidFail(_ error: Error!) {
+        NSLog("An error has occurred on payment %@", error.localizedDescription)
+    }
+    
+    func bkmExpressPaymentDidCancel() {
+        NSLog("Payment is cancelled by user")
+    }
+
+
+
