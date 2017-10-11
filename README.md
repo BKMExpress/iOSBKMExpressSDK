@@ -69,7 +69,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
     #pragma Payment delegate methods
 
-    - (void)bkmExpressPaymentDidComplete{
+    - (void)bkmExpressPaymentDidCompleteWithPOSResult:(BKMPOSResult *)posResult{
        NSLog(@"Successful payment");
     }
 
