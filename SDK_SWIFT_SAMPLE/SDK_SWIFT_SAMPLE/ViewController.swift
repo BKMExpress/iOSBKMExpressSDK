@@ -45,4 +45,3 @@ class ViewController: UIViewController , BKMExpressPaymentDelegate {
         NSLog("Payment is cancelled by user")
     }
 }
-

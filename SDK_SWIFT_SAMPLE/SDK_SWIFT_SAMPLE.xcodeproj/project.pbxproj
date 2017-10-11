@@ -12,8 +12,8 @@
 		B701C0C21DFEA90F00823C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B701C0C01DFEA90F00823C1D /* Main.storyboard */; };
 		B701C0C41DFEA90F00823C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B701C0C31DFEA90F00823C1D /* Assets.xcassets */; };
 		B701C0C71DFEA90F00823C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B701C0C51DFEA90F00823C1D /* LaunchScreen.storyboard */; };
-		B74B72481DFEDB2C003C23FA /* BEX.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B74B72431DFEDB2C003C23FA /* BEX.bundle */; };
-		B74B72491DFEDB2C003C23FA /* libBKMExpressSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B74B72471DFEDB2C003C23FA /* libBKMExpressSDK.a */; };
+		B76A4E3B1F8E069C004EFB76 /* BEX.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B76A4E361F8E069C004EFB76 /* BEX.bundle */; };
+		B76A4E3C1F8E069C004EFB76 /* libBKMExpressSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B76A4E3A1F8E069C004EFB76 /* libBKMExpressSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +25,10 @@
 		B701C0C61DFEA90F00823C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B701C0C81DFEA90F00823C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B701C1061DFED2A600823C1D /* BKM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BKM-Bridging-Header.h"; sourceTree = "<group>"; };
-		B74B72431DFEDB2C003C23FA /* BEX.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BEX.bundle; sourceTree = "<group>"; };
-		B74B72451DFEDB2C003C23FA /* BKMExpressPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPairViewController.h; sourceTree = "<group>"; };
-		B74B72461DFEDB2C003C23FA /* BKMExpressPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPaymentViewController.h; sourceTree = "<group>"; };
-		B74B72471DFEDB2C003C23FA /* libBKMExpressSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBKMExpressSDK.a; sourceTree = "<group>"; };
+		B76A4E361F8E069C004EFB76 /* BEX.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BEX.bundle; sourceTree = "<group>"; };
+		B76A4E381F8E069C004EFB76 /* BKMExpressPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPairViewController.h; sourceTree = "<group>"; };
+		B76A4E391F8E069C004EFB76 /* BKMExpressPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMExpressPaymentViewController.h; sourceTree = "<group>"; };
+		B76A4E3A1F8E069C004EFB76 /* libBKMExpressSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBKMExpressSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B74B72491DFEDB2C003C23FA /* libBKMExpressSDK.a in Frameworks */,
+				B76A4E3C1F8E069C004EFB76 /* libBKMExpressSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,26 +77,18 @@
 		B74B72411DFEDB2C003C23FA /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				B74B72421DFEDB2C003C23FA /* BEX_SDK */,
+				B76A4E361F8E069C004EFB76 /* BEX.bundle */,
+				B76A4E371F8E069C004EFB76 /* include */,
+				B76A4E3A1F8E069C004EFB76 /* libBKMExpressSDK.a */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
 		};
-		B74B72421DFEDB2C003C23FA /* BEX_SDK */ = {
+		B76A4E371F8E069C004EFB76 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				B74B72431DFEDB2C003C23FA /* BEX.bundle */,
-				B74B72441DFEDB2C003C23FA /* include */,
-				B74B72471DFEDB2C003C23FA /* libBKMExpressSDK.a */,
-			);
-			path = BEX_SDK;
-			sourceTree = "<group>";
-		};
-		B74B72441DFEDB2C003C23FA /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B74B72451DFEDB2C003C23FA /* BKMExpressPairViewController.h */,
-				B74B72461DFEDB2C003C23FA /* BKMExpressPaymentViewController.h */,
+				B76A4E381F8E069C004EFB76 /* BKMExpressPairViewController.h */,
+				B76A4E391F8E069C004EFB76 /* BKMExpressPaymentViewController.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -163,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B701C0C71DFEA90F00823C1D /* LaunchScreen.storyboard in Resources */,
-				B74B72481DFEDB2C003C23FA /* BEX.bundle in Resources */,
+				B76A4E3B1F8E069C004EFB76 /* BEX.bundle in Resources */,
 				B701C0C41DFEA90F00823C1D /* Assets.xcassets in Resources */,
 				B701C0C21DFEA90F00823C1D /* Main.storyboard in Resources */,
 			);
@@ -305,6 +297,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDK_SWIFT_SAMPLE/ThirdParty/BEX_SDK",
+					"$(PROJECT_DIR)/SDK_SWIFT_SAMPLE/ThirdParty",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "BKM.SDK-SWIFT-SAMPLE";
@@ -326,6 +319,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDK_SWIFT_SAMPLE/ThirdParty/BEX_SDK",
+					"$(PROJECT_DIR)/SDK_SWIFT_SAMPLE/ThirdParty",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "BKM.SDK-SWIFT-SAMPLE";
