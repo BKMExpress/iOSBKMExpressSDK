@@ -38,7 +38,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 ### BKMExpressPairingDelegate
 
-    -  (void)bkmExpressPairingDidComplete; //Success 
+    -  (void)bkmExpressPairingDidComplete:(NSString *)first6Digits withLast2Digits:(NSString *)last2Digits; //Success 
 
     -  (void)bkmExpressPairingDidCancel; //Cancel
 
@@ -99,8 +99,8 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
     #pragma Pairing delegate methods
 
-    - (void)bkmExpressPairingDidComplete{
-       NSLog(@"Successful pairing");
+   -  (void)bkmExpressPairingDidComplete:(NSString *)first6Digits withLast2Digits:(NSString *)last2Digits;{
+           NSLog(@"%@",[NSString stringWithFormat:@"it was paired successfully the card which first six digit is %@ and last   two number is %@", first6Digits, last2Digits]);
     }
     
     - (void)bkmExpressPairingDidFail:(NSError *)error{
