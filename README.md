@@ -1,17 +1,17 @@
-##NE İŞE YARAR?
+## NE İŞE YARAR?
 > BKM Express iOS SDK paketi, kullanıcının BKMExpress ile yapacağı ödemeler için, işyeri uygulamasından çıkmadan, kart eşleme ve güvenli ödeme yapma seçeneklerini sunmaktadır.
 
-##SİSTEM GEREKSİNİMLERİ NELERDİR?
+## SİSTEM GEREKSİNİMLERİ NELERDİR?
 
  *  Min iOS-7 desteklenmektedir.
  *  iPhone cihazlar desteklenmektedir. 
 
-##NASIL ÇALIŞIR?
+## NASIL ÇALIŞIR?
 
 Işyerleri BKM Express entegrasyonlarını tamamlayarak gerekli **API Key**lerini almalıdırlar. Bu API Key daha sonra
 BKM Express iOS SDK paketinin kullanılabilmesi için gerekmektedir. İşyeri servis uygulamaları, BKMExpress core servislerine bağlanarak kendileri için hazırlanan **TOKEN**'ı ve **API Key**'i sunulan methodlara parametrik olarak ileterek, kart eşleştirme ve güvenli ödeme akışını başlatabilirler.
 
-##ORTAMLAR
+## ORTAMLAR
 
 Kart eşleme paketi iki farklı ortamda çalışmaktadır. 
 * PROD
@@ -25,7 +25,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 
-###IOS OBJECTIVE-C SDK ENTEGRASYONU
+### IOS OBJECTIVE-C SDK ENTEGRASYONU
 
  SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
 
@@ -52,7 +52,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
     -  (void)bkmExpressPaymentDidFail:(NSError *)error; //Fail
 
-###ÖRNEK OBJECTIVE-C ÖDEME AKIŞI KULLANIMI
+### ÖRNEK OBJECTIVE-C ÖDEME AKIŞI KULLANIMI
       
 
     #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
@@ -81,7 +81,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     }
 
 
-###ÖRNEK EŞLEŞME AKIŞI KULLANIMI
+### ÖRNEK EŞLEŞME AKIŞI KULLANIMI
       
 
     #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
@@ -97,9 +97,9 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     }
     
     - (IBAction)tapChangeCardButton:(id)sender {
-    BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
-    [vc setEnableDebugMode:NO];
-    [self presentViewController:vc animated:YES completion:nil];
+      BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
+      [vc setEnableDebugMode:NO];
+      [self presentViewController:vc animated:YES completion:nil];
     }
 
     #pragma Pairing delegate methods
@@ -118,7 +118,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 
-###IOS SWIFT SDK ENTEGRASYONU
+### IOS SWIFT SDK ENTEGRASYONU
 
  SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
 
@@ -141,7 +141,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     -  func bkmExpressPaymentDidFail(_ error: Error!) { //Fail
 
 
-###ÖRNEK SWIFT ÖDEME AKIŞI KULLANIMI
+### ÖRNEK SWIFT ÖDEME AKIŞI KULLANIMI
       
     let kBKM_EXPRESS_SDK_API_KEY:String = "given by BKM"
     let kQUICK_PAY_TOKEN:String = "Quick pay token will be given by BKM after the merchant integration"
