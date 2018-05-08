@@ -58,9 +58,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
     #define PAYMENT_TOKEN @"Payment token will be given by BKM after the merchant integration"
 
-
     @interface ViewController () <BKMExpressPaymentDelegate>
-
   
     - (IBAction)tapPaymentButton:(id)sender {
        BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:PAYMENT_TOKEN withApiKey:BKM_EXPRESS_SDK_API_KEY delegate:self];
@@ -92,7 +90,6 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     
     @interface ViewController () <BKMExpressPairingDelegate>
 
-  
     - (IBAction)tapPairButton:(id)sender {
        BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:QUICK_PAY_TOKEN  withApiKey:BKM_EXPRESS_SDK_API_KEY delegate:self];
        [vc setEnableDebugMode:YES];
@@ -103,7 +100,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
     [vc setEnableDebugMode:NO];
     [self presentViewController:vc animated:YES completion:nil];
-}
+    }
 
     #pragma Pairing delegate methods
 
