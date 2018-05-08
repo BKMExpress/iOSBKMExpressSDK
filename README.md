@@ -86,7 +86,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
     #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
     #define QUICK_PAY_TOKEN @"Quick pay token will be given by BKM after the merchant integration"
-    #define kPAIRING_TICKET @"Ticket will be given by BKM after the merchant integration"
+    #define PAIRING_TICKET @"Ticket will be given by BKM after the merchant integration"
     
     @interface ViewController () <BKMExpressPairingDelegate>
 
@@ -97,23 +97,23 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     }
     
     - (IBAction)tapChangeCardButton:(id)sender {
-      BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
-      [vc setEnableDebugMode:NO];
-      [self presentViewController:vc animated:YES completion:nil];
+       BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:PAIRING_TICKET withDelegate:self];
+       [vc setEnableDebugMode:NO];
+       [self presentViewController:vc animated:YES completion:nil];
     }
 
     #pragma Pairing delegate methods
 
      - (void)bkmExpressPairingDidComplete:(NSString *)first6Digits withLast2Digits:(NSString *)last2Digits;{
-           NSLog(@"%@",[NSString stringWithFormat:@"it was paired successfully the card which first six digit is %@ and last   two number is %@", first6Digits, last2Digits]);
+        NSLog(@"%@",[NSString stringWithFormat:@"it was paired successfully the card which first six digit is %@ and last   two number is %@", first6Digits, last2Digits]);
     }
     
     - (void)bkmExpressPairingDidFail:(NSError *)error{
-       NSLog(@"An error has occurred on card pairing = %@",error.localizedDescription);
+        NSLog(@"An error has occurred on card pairing = %@",error.localizedDescription);
     }
 
     - (void)bkmExpressPairingDidCancel{
-       NSLog(@"Card pairing is canceled by user");
+        NSLog(@"Card pairing is canceled by user");
     }
 
 
