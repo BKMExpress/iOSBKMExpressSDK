@@ -13,6 +13,7 @@
 #define kBKM_EXPRESS_SDK_API_KEY @"given by BKM"
 #define kQUICK_PAY_TOKEN @"Quick pay token will be given by BKM after the merchant integration"
 #define kPAYMENT_TOKEN @"Payment token will be given by BKM after the merchant integration"
+#define kPAIRING_TICKET @"Ticket will be given by BKM after the merchant integration"
 
 @interface ViewController () <BKMExpressPairingDelegate,BKMExpressPaymentDelegate>
 @end
@@ -29,11 +30,16 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (IBAction)tapChangeCardButton:(id)sender {
+    BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
+    [vc setEnableDebugMode:NO];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 #pragma Pairing delegate methods
 
-- (void)bkmExpressPairingDidComplete{
-    NSLog(@"Card pairing is successful");
+- (void)bkmExpressPairingDidComplete:(NSString *)first6Digits withLast2Digits:(NSString *)last2Digits{
+    NSLog(@"%@",[NSString stringWithFormat:@"it was paired successfully the card which first six digit is %@ and last two number is %@", first6Digits, last2Digits]);
 }
 
 - (void)bkmExpressPairingDidFail:(NSError *)error{
@@ -44,13 +50,11 @@
     NSLog(@"Card pairing is canceled by user");
 }
 
-
 - (IBAction)tapPaymentButton:(id)sender {
     BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:kPAYMENT_TOKEN withApiKey:kBKM_EXPRESS_SDK_API_KEY delegate:self];
     [vc setEnableDebugMode:YES];
     [self presentViewController:vc animated:YES completion:nil];
 }
-
 
 #pragma Payment delegate methods
 

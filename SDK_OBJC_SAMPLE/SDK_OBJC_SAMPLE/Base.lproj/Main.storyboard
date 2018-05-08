@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bj6-XV-mK5">
-    <device id="retina4_7" orientation="portrait">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bj6-XV-mK5">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuseoSans_500.otf">
+            <string>MuseoSans-500</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="NEu-BV-Jml">
@@ -19,46 +23,68 @@
                         <viewControllerLayoutGuide type="bottom" id="cKF-Yu-Mbh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I8O-op-h5h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-yX-ldt">
-                                <rect key="frame" x="16" y="290" width="343" height="87"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="0o0-N8-tog"/>
-                                    <constraint firstAttribute="height" constant="87" id="m5H-CR-d1q"/>
-                                </constraints>
-                                <state key="normal" image="bkm-ode"/>
-                                <connections>
-                                    <action selector="tapPairButton:" destination="Bj6-XV-mK5" eventType="touchUpInside" id="Ikb-nD-LsC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS8-Zm-27B">
-                                <rect key="frame" x="16" y="158" width="343" height="87"/>
+                                <rect key="frame" x="16" y="74" width="343" height="87"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="FNi-Z0-doX"/>
-                                    <constraint firstAttribute="width" constant="343" id="W1k-ZQ-6JV"/>
+                                    <constraint firstAttribute="width" constant="343" id="DXs-93-aaJ"/>
+                                    <constraint firstAttribute="height" constant="87" id="ak8-r1-uh9"/>
                                 </constraints>
                                 <state key="normal" image="bkm-ode-1"/>
                                 <connections>
                                     <action selector="tapPaymentButton:" destination="Bj6-XV-mK5" eventType="touchUpInside" id="Fed-2t-rdT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-yX-ldt">
+                                <rect key="frame" x="16" y="187" width="343" height="87"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="fIy-6X-kYr"/>
+                                    <constraint firstAttribute="width" constant="343" id="yRk-fU-UKB"/>
+                                </constraints>
+                                <state key="normal" image="bkm-ode"/>
+                                <connections>
+                                    <action selector="tapPairButton:" destination="Bj6-XV-mK5" eventType="touchUpInside" id="Ikb-nD-LsC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSJ-PF-SQa">
+                                <rect key="frame" x="22.666666666666657" y="309" width="330" height="61"/>
+                                <color key="backgroundColor" red="0.24513730410000001" green="0.54387372730000005" blue="0.61963844300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="aV1-b0-tJO"/>
+                                    <constraint firstAttribute="width" constant="330" id="c9e-OL-unS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
+                                <state key="normal" title="Kart Değiştir">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapChangeCardButton:" destination="Bj6-XV-mK5" eventType="touchUpInside" id="as7-B8-uF9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zS8-Zm-27B" firstAttribute="leading" secondItem="I8O-op-h5h" secondAttribute="leadingMargin" id="95J-w9-Wqn"/>
-                            <constraint firstItem="vxn-yX-ldt" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="LiS-15-xjU"/>
-                            <constraint firstItem="vxn-yX-ldt" firstAttribute="centerY" secondItem="I8O-op-h5h" secondAttribute="centerY" id="ciu-Wx-UVc"/>
-                            <constraint firstItem="vxn-yX-ldt" firstAttribute="top" secondItem="zS8-Zm-27B" secondAttribute="bottom" constant="45" id="ieJ-yv-qqa"/>
-                            <constraint firstItem="zS8-Zm-27B" firstAttribute="trailing" secondItem="I8O-op-h5h" secondAttribute="trailingMargin" id="nxO-2a-dCd"/>
+                            <constraint firstItem="zS8-Zm-27B" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="3kc-rk-U9f"/>
+                            <constraint firstItem="vxn-yX-ldt" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="3r3-lx-jcW"/>
+                            <constraint firstItem="vxn-yX-ldt" firstAttribute="top" secondItem="zS8-Zm-27B" secondAttribute="bottom" constant="26" id="KiZ-V7-eAT"/>
+                            <constraint firstItem="zS8-Zm-27B" firstAttribute="top" secondItem="hJU-ng-fIa" secondAttribute="bottom" constant="30" id="fJY-Bg-gvW"/>
+                            <constraint firstItem="ZSJ-PF-SQa" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="kGj-Lb-rc5"/>
+                            <constraint firstItem="ZSJ-PF-SQa" firstAttribute="top" secondItem="vxn-yX-ldt" secondAttribute="bottom" constant="35" id="zat-tU-dCa"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foj-IS-uNE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="150"/>
+            <point key="canvasLocation" x="136.80000000000001" y="149.77511244377811"/>
         </scene>
     </scenes>
     <resources>

@@ -11,11 +11,12 @@
 @protocol BKMExpressPairingDelegate <NSObject>
 
 @required
-- (void)bkmExpressPairingDidComplete;
+- (void)bkmExpressPairingDidComplete:(NSString *)first6Digits withLast2Digits:(NSString *)last2Digits;
 - (void)bkmExpressPairingDidCancel;
 - (void)bkmExpressPairingDidFail:(NSError *)error;
 
 @end
+
 
 @interface BKMExpressPairViewController : UINavigationController
 
@@ -24,5 +25,7 @@
 -(void)setEnableDebugMode:(BOOL)isEnableDebugMode;
 
 - (instancetype)initWithToken:(NSString *)token withApiKey:(NSString *)apiKey  delegate:(id<BKMExpressPairingDelegate>)delegate;
+
+- (instancetype)initWithTicket:(NSString *)ticket withDelegate:(id<BKMExpressPairingDelegate>)delegate;
 
 @end
