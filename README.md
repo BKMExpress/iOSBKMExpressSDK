@@ -55,13 +55,13 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 ### ÖRNEK OBJECTIVE-C ÖDEME AKIŞI KULLANIMI
       
 
-    #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
     #define PAYMENT_TOKEN @"Payment token will be given by BKM after the merchant integration"
 
     @interface ViewController () <BKMExpressPaymentDelegate>
   
     - (IBAction)tapPaymentButton:(id)sender {
-       BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:PAYMENT_TOKEN withApiKey:BKM_EXPRESS_SDK_API_KEY delegate:self];
+       BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:PAYMENT_TOKEN delegate:self];
+       // YES:PreProd, NO:Prod
        [vc setEnableDebugMode:YES];
        [self presentViewController:vc animated:YES completion:nil];
     }
@@ -83,15 +83,14 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 ### ÖRNEK EŞLEŞME AKIŞI KULLANIMI
       
-
-    #define BKM_EXPRESS_SDK_API_KEY @"Given by BKM"
     #define QUICK_PAY_TOKEN @"Quick pay token will be given by BKM after the merchant integration"
     #define PAIRING_TICKET @"Ticket will be given by BKM after the merchant integration"
     
     @interface ViewController () <BKMExpressPairingDelegate>
 
     - (IBAction)tapPairButton:(id)sender {
-       BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:QUICK_PAY_TOKEN  withApiKey:BKM_EXPRESS_SDK_API_KEY delegate:self];
+       BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:QUICK_PAY_TOKEN delegate:self];
+        // YES:PreProd, NO:Prod
        [vc setEnableDebugMode:YES];
        [self presentViewController:vc animated:YES completion:nil];
     }
@@ -143,7 +142,6 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 ### ÖRNEK SWIFT ÖDEME AKIŞI KULLANIMI
       
-    let kBKM_EXPRESS_SDK_API_KEY:String = "given by BKM"
     let kQUICK_PAY_TOKEN:String = "Quick pay token will be given by BKM after the merchant integration"
     let kPAYMENT_TOKEN:String = "Payment token will be given by BKM after the merchant integration"
 
@@ -156,8 +154,9 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
-        let instanceOfCustomObject: BKMExpressPaymentViewController = BKMExpressPaymentViewController(paymentToken: kPAYMENT_TOKEN, withApiKey: kBKM_EXPRESS_SDK_API_KEY, delegate: self)
+        let instanceOfCustomObject: BKMExpressPaymentViewController = BKMExpressPaymentViewController(paymentToken: kPAYMENT_TOKEN, delegate: self)
 
+        // True:PreProd, False:Prod
         instanceOfCustomObject.setEnableDebugMode(true)
         
         self.present(instanceOfCustomObject , animated:true,completion: nil)
