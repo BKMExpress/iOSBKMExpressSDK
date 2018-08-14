@@ -8,7 +8,7 @@
 
 ## NASIL ÇALIŞIR?
 
-BKM Express iOS SDK paketinin kullanılabilmesi için işyerleri BKM Express entegrasyonlarını tamamlaması gerekmektedir. Daha sonra işyeri servis uygulamaları BKMExpress core servislerine bağlanarak kendilerine verilen **TOKEN**'ı SDK tarafından sunulan methodlara parametrik olarak ileterek, kart eşleştirme, değiştirme ve güvenli ödeme akışını başlatabilirler.
+BKM Express iOS SDK paketinin kullanılabilmesi için işyerleri BKM Express entegrasyonlarını tamamlaması gerekmektedir. Daha sonra işyeri servis uygulamaları BKMExpress core servislerine bağlanarak kendilerine verilen **TOKEN**'ı SDK tarafından sunulan methodlara parametrik olarak ileterek kart eşleştirme, değiştirme ve güvenli ödeme akışını başlatabilirler.
 
 ## ORTAMLAR
 
@@ -16,7 +16,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 * PROD
 * PREPROD
 
-**Debug mod aktif edildiğinde SDK preprod ortamına bağlanacaktır. Aksi halde prod ortama bağlanacaktır**
+**Debug mod aktif edildiğinde SDK preprod ortamına bağlanacaktır. Aksi halde prod ortama bağlanacaktır.**
 
      [vc setEnableDebugMode:YES];
 
