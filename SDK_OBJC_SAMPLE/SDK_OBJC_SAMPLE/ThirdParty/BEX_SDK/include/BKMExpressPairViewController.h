@@ -24,7 +24,7 @@
 
 -(void)setEnableDebugMode:(BOOL)isEnableDebugMode;
 
-- (instancetype)initWithToken:(NSString *)token withApiKey:(NSString *)apiKey  delegate:(id<BKMExpressPairingDelegate>)delegate;
+- (instancetype)initWithToken:(NSString *)token delegate:(id<BKMExpressPairingDelegate>)delegate;
 
 - (instancetype)initWithTicket:(NSString *)ticket withDelegate:(id<BKMExpressPairingDelegate>)delegate;
 

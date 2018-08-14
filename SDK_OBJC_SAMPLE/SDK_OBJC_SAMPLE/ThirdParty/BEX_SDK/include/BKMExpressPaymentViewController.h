@@ -25,7 +25,7 @@
 
 -(void)setEnableDebugMode:(BOOL)isEnableDebugMode;
 
-- (instancetype)initWithPaymentToken:(NSString *)token withApiKey:(NSString *)apiKey delegate:(id<BKMExpressPaymentDelegate>)delegate;
+- (instancetype)initWithPaymentToken:(NSString *)token delegate:(id<BKMExpressPaymentDelegate>)delegate;
 
 @end
 

@@ -3,17 +3,16 @@
 //  BKMExpressSDK
 //
 //  Created by BKM
-//  Copyright © 2016 Bankalararası Kart Merkezi. All rights reserved.
+//  Copyright © 2016-2018 Bankalararası Kart Merkezi. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "BKMExpressPairViewController.h"
 #import "BKMExpressPaymentViewController.h"
 
-#define kBKM_EXPRESS_SDK_API_KEY @"given by BKM"
-#define kQUICK_PAY_TOKEN @"Quick pay token will be given by BKM after the merchant integration"
-#define kPAYMENT_TOKEN @"Payment token will be given by BKM after the merchant integration"
-#define kPAIRING_TICKET @"Ticket will be given by BKM after the merchant integration"
+#define kQUICK_PAY_TOKEN     @"Quick pay token will be given by BKM after the merchant integration"
+#define kPAIRING_TICKET      @"Ticket will be given by BKM after the merchant integration"
+#define kPAYMENT_TOKEN       @"Payment token will be given by BKM after the merchant integration"
 
 @interface ViewController () <BKMExpressPairingDelegate,BKMExpressPaymentDelegate>
 @end
@@ -25,7 +24,7 @@
 }
 
 - (IBAction)tapPairButton:(id)sender {
-    BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:kQUICK_PAY_TOKEN withApiKey:kBKM_EXPRESS_SDK_API_KEY delegate:self];
+    BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:kQUICK_PAY_TOKEN delegate:self];
     [vc setEnableDebugMode:NO];
     [self presentViewController:vc animated:YES completion:nil];
 }
@@ -51,7 +50,7 @@
 }
 
 - (IBAction)tapPaymentButton:(id)sender {
-    BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:kPAYMENT_TOKEN withApiKey:kBKM_EXPRESS_SDK_API_KEY delegate:self];
+    BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:kPAYMENT_TOKEN delegate:self];
     [vc setEnableDebugMode:YES];
     [self presentViewController:vc animated:YES completion:nil];
 }
