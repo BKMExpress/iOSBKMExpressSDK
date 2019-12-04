@@ -62,6 +62,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
        BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:PAYMENT_TOKEN delegate:self];
        // YES:PreProd, NO:Prod
        [vc setEnableDebugMode:YES];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
        [self presentViewController:vc animated:YES completion:nil];
     }
 
@@ -91,6 +92,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
        BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:QUICK_PAY_TOKEN delegate:self];
         // YES:PreProd, NO:Prod
        [vc setEnableDebugMode:YES];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
        [self presentViewController:vc animated:YES completion:nil];
     }
     
@@ -157,6 +159,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
         // True:PreProd, False:Prod
         instanceOfCustomObject.setEnableDebugMode(true)
+        instanceOfCustomObject.modalPresentationStyle = .fullScreen
         
         self.present(instanceOfCustomObject , animated:true,completion: nil)
     }
