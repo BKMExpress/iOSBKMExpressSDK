@@ -23,6 +23,7 @@ class ViewController: UIViewController , BKMExpressPaymentDelegate {
         let instanceOfCustomObject: BKMExpressPaymentViewController = BKMExpressPaymentViewController(paymentToken: kPAYMENT_TOKEN, delegate: self)
 
         instanceOfCustomObject.setEnableDebugMode(true)
+        instanceOfCustomObject.modalPresentationStyle = .fullScreen
         
         self.present(instanceOfCustomObject , animated:true,completion: nil)
     }

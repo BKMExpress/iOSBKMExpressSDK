@@ -26,12 +26,14 @@
 - (IBAction)tapPairButton:(id)sender {
     BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithToken:kQUICK_PAY_TOKEN delegate:self];
     [vc setEnableDebugMode:NO];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (IBAction)tapChangeCardButton:(id)sender {
     BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
     [vc setEnableDebugMode:NO];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -52,6 +54,7 @@
 - (IBAction)tapPaymentButton:(id)sender {
     BKMExpressPaymentViewController *vc = [[BKMExpressPaymentViewController alloc] initWithPaymentToken:kPAYMENT_TOKEN delegate:self];
     [vc setEnableDebugMode:YES];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
