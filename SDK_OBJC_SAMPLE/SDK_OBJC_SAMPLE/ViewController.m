@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BKMExpressPairViewController.h"
-#import "BKMExpressPaymentViewController.h"
+#import <BKMExpressSDK/BKMExpressSDK.h>
 
 #define kQUICK_PAY_TOKEN     @"Quick pay token will be given by BKM after the merchant integration"
 #define kPAIRING_TICKET      @"Ticket will be given by BKM after the merchant integration"
