@@ -6,95 +6,171 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ttgazb1KX0+qyRybOhAZay1dqoI=
+		skO6c2Y3uLeAdI9yd1vOUFErpbE=
 		</data>
-		<key>BKMAddCardVBeforeLoginViewController.nib</key>
+		<key>BKMAddCardVBeforeLoginViewController.nib/objects-13.0+.nib</key>
 		<data>
-		mma6OPyV+EPC10rBSR9hUksD9qs=
+		Pc2+9T6eqXMsw7Zr+x/IXUXkrUE=
 		</data>
-		<key>BKMAddCardViewController.nib</key>
+		<key>BKMAddCardVBeforeLoginViewController.nib/runtime.nib</key>
 		<data>
-		SX0ISLrpeCN5PMgCriRZRaPFrSE=
+		O4V27XYOGUZs/LpgrOLrHrgUj18=
+		</data>
+		<key>BKMAddCardViewController.nib/objects-13.0+.nib</key>
+		<data>
+		sOOIuXbXQc2gZq54VXvn9pijqk8=
+		</data>
+		<key>BKMAddCardViewController.nib/runtime.nib</key>
+		<data>
+		HpppsmkOh7CryjsyrfMEdU6bbNo=
 		</data>
 		<key>BKMCardCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		DMXW4JIZWafKDCx7IbaidtWOXBg=
+		8h9n/JSg8Yzizsku4+HVIE1as3E=
+		</data>
+		<key>BKMCardCollectionViewCell.nib/objects-13.0+.nib</key>
+		<data>
+		KaLyE7FucoTnOicFkYzlDEZAYOg=
 		</data>
 		<key>BKMCardCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		Q3u0Rk5iPgKWWAwcGknVbTiYdJI=
+		5xKNO0pn6uRxCDxZGmDGKnnaEXk=
 		</data>
-		<key>BKMCardView.nib</key>
+		<key>BKMCardView.nib/objects-13.0+.nib</key>
 		<data>
-		Ghtwixvos+DBsXzid+/FORt2bYg=
+		5kL8Ac+YZ/Gs4v5XtUSUfDjofO0=
 		</data>
-		<key>BKMCardsViewController.nib</key>
+		<key>BKMCardView.nib/runtime.nib</key>
 		<data>
-		jjDHJqOZEsDcQqWaRai+discAKI=
+		CfYetS6ivzhcdi9zN/N8HGdN4M0=
 		</data>
-		<key>BKMChangeCardsForPairingViewController.nib</key>
+		<key>BKMCardsViewController.nib/objects-13.0+.nib</key>
 		<data>
-		UYaLdizHHyCXwQrVEkLPlCxHuu8=
+		XFW4H10IeTPwJMFRRmxFhDZ+O2A=
 		</data>
-		<key>BKMConfirmationDialog.nib</key>
+		<key>BKMCardsViewController.nib/runtime.nib</key>
 		<data>
-		r6fA46PYdauqv/aF1kKT8ws+Qzs=
+		b2xgHOXstI8RhjNn0//D/D804qc=
 		</data>
-		<key>BKMContractViewController.nib</key>
+		<key>BKMChangeCardsForPairingViewController.nib/objects-13.0+.nib</key>
 		<data>
-		q3zU25InYV5iOXaaR8tM4jtkdk0=
+		eKwsvg7b30U0AnZUhNsKo1LKxbk=
+		</data>
+		<key>BKMChangeCardsForPairingViewController.nib/runtime.nib</key>
+		<data>
+		UMz4b6vV26fqEhKhMfsVnN/LYA4=
+		</data>
+		<key>BKMConfirmationDialog.nib/objects-13.0+.nib</key>
+		<data>
+		aP8cxe7BRVMM6x6LAoOkpUCvDTk=
+		</data>
+		<key>BKMConfirmationDialog.nib/runtime.nib</key>
+		<data>
+		oc+/Fo/H7NVjHEPAIqwQt4M0Gis=
+		</data>
+		<key>BKMContractViewController.nib/objects-13.0+.nib</key>
+		<data>
+		LLN7VnhhKCm1mPJYpYwC0Qt8rkw=
+		</data>
+		<key>BKMContractViewController.nib/runtime.nib</key>
+		<data>
+		bHIFEsMROpm+kQexXGVTx/dEA8I=
 		</data>
 		<key>BKMDonationCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		7AkJspX5f9iHlDphAJmisb/xNG8=
+		1pM9WX7dGWvUGHOK9ltVpHWWaAI=
+		</data>
+		<key>BKMDonationCollectionViewCell.nib/objects-13.0+.nib</key>
+		<data>
+		KQW7Jbp8bFGaspRrOou9N5n2ack=
 		</data>
 		<key>BKMDonationCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		sjcAWABcwFEJVM9KDJgikIC6fuQ=
+		VbgnrnY3lRgWICi0eX5gE5jicxQ=
 		</data>
-		<key>BKMForgotAndChangePassViewController.nib</key>
+		<key>BKMForgotAndChangePassViewController.nib/objects-13.0+.nib</key>
 		<data>
-		VfumI9nPRBsa7Z/0SehQ1tb3xXE=
+		pNnDPma8xdh5WSdo6EacVY4Yk/w=
 		</data>
-		<key>BKMForgotPassViewController.nib</key>
+		<key>BKMForgotAndChangePassViewController.nib/runtime.nib</key>
 		<data>
-		QR6PiGYB2UzFHvSHy+NDTh03L6E=
+		FZKgAEjaYHyuFzXZKr3RCjA/XqQ=
 		</data>
-		<key>BKMInstallmentTableViewCell.nib</key>
+		<key>BKMForgotPassViewController.nib/objects-13.0+.nib</key>
 		<data>
-		z1CGTs8eVL60l/wvoiAyNywHWTc=
+		a57YM9SR6k4lsLcdYrL/j2lBGNY=
 		</data>
-		<key>BKMInstallmentView.nib</key>
+		<key>BKMForgotPassViewController.nib/runtime.nib</key>
 		<data>
-		smIWX4BMlQi/gQJDNl5spjUHyj4=
+		+3LtWBs4VGdOyb1MAHjDZe9hFfs=
 		</data>
-		<key>BKMLoadingView.nib</key>
+		<key>BKMInstallmentTableViewCell.nib/objects-13.0+.nib</key>
 		<data>
-		6tT3tSqIR68a6TeZJCBfTL4PSUw=
+		6pDcKLmiXRGTf9yThB8+2ihC0p4=
+		</data>
+		<key>BKMInstallmentTableViewCell.nib/runtime.nib</key>
+		<data>
+		8RN1U4oyhbyL+y0PT6qkOYqqcEw=
+		</data>
+		<key>BKMInstallmentView.nib/objects-13.0+.nib</key>
+		<data>
+		pD2NAeuPrnrhHxJKmi/54FueArk=
+		</data>
+		<key>BKMInstallmentView.nib/runtime.nib</key>
+		<data>
+		BqcopNxKTunXjuVeldrSXqqVxBs=
+		</data>
+		<key>BKMLoadingView.nib/objects-13.0+.nib</key>
+		<data>
+		GvQCGelIZtd04g/6zqxXXguDD1g=
+		</data>
+		<key>BKMLoadingView.nib/runtime.nib</key>
+		<data>
+		rPQ7oKTm2T+FM+VrBk9JRawYNGY=
+		</data>
+		<key>BKMLoginViewController~iphone.nib/objects-13.0+.nib</key>
+		<data>
+		Je9q/zgrvy8pEBsmljz1pm5bMYU=
 		</data>
 		<key>BKMLoginViewController~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		YLY5EbQlGFYtXB7FcW9jYQnQOmw=
+		hgQPIAnyujtJv4ibSGKSRCtncOE=
 		</data>
 		<key>BKMLoginViewController~iphone.nib/runtime.nib</key>
 		<data>
-		9b6LXlg7n3ay4k+VlqLtQZOxRCU=
+		idedKrv+R8x+D/28pC5nSTtvFMA=
 		</data>
-		<key>BKMOTPViewController.nib</key>
+		<key>BKMOTPViewController.nib/objects-13.0+.nib</key>
 		<data>
-		yRuPKZknmVRUyYTlL0EuJby8mRs=
+		3+VJZf1HFMX0LouTtqc69cUxwq8=
 		</data>
-		<key>BKMPaymentCardSelectionViewController.nib</key>
+		<key>BKMOTPViewController.nib/runtime.nib</key>
 		<data>
-		Rt1rEgPFIOh15IPv5XJewJo9vGY=
+		gbVDzfIsfQPSAEo2eSLhfz/dHPg=
 		</data>
-		<key>BKMRegisterViewController.nib</key>
+		<key>BKMPaymentCardSelectionViewController.nib/objects-13.0+.nib</key>
 		<data>
-		jOPnzSPkw39VSreNyC1a3HJcpYM=
+		sos2BkT0TiTKWatcLbmNda6xS8Y=
 		</data>
-		<key>BKMSTKViewController.nib</key>
+		<key>BKMPaymentCardSelectionViewController.nib/runtime.nib</key>
 		<data>
-		T8aO5yZThoyZZ0wZGI5fsIW26Yo=
+		hTKceJVOlGZs/9r+tc024Ovm9aI=
+		</data>
+		<key>BKMRegisterViewController.nib/objects-13.0+.nib</key>
+		<data>
+		L3uy+ijwQmwp977LiHW1J6XxuEM=
+		</data>
+		<key>BKMRegisterViewController.nib/runtime.nib</key>
+		<data>
+		9VT3Sg07IQQ3vWLeo6SHtbOLIeQ=
+		</data>
+		<key>BKMSTKViewController.nib/objects-13.0+.nib</key>
+		<data>
+		Vy4bMGvVCNjFFrBAYRAXd95VR9w=
+		</data>
+		<key>BKMSTKViewController.nib/runtime.nib</key>
+		<data>
+		nDClqGuhFtrVaTC2DBIUN6nJ7Bw=
 		</data>
 		<key>Headers/BKMExpressPairViewController.h</key>
 		<data>
@@ -110,7 +186,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VwQDOCllxsfYksf/FdAV0k5BCAo=
+		RiGgT3RrVInUj/Xjyk2o1ElRZzc=
 		</data>
 		<key>LICENSE_jsonmodel.txt</key>
 		<data>
@@ -175,253 +251,462 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ttgazb1KX0+qyRybOhAZay1dqoI=
+			skO6c2Y3uLeAdI9yd1vOUFErpbE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1KvwalDU0vbX7KIl7MOF6uMtXmbGEsftquH5eG/BV2Q=
+			lRd/4CvjOJGVKS7fuT6mnWqT3fd6/g/guBbcXRwxmoc=
 			</data>
 		</dict>
-		<key>BKMAddCardVBeforeLoginViewController.nib</key>
+		<key>BKMAddCardVBeforeLoginViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mma6OPyV+EPC10rBSR9hUksD9qs=
+			Pc2+9T6eqXMsw7Zr+x/IXUXkrUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			QCm/93bL7Kh4L1Mu/sgI6P3PTySB45V9wdAmKcXg3Js=
+			lMtQTcTI34XpNl2dNY5mAQHUURC7aOyGg5aSAISqU6k=
 			</data>
 		</dict>
-		<key>BKMAddCardViewController.nib</key>
+		<key>BKMAddCardVBeforeLoginViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SX0ISLrpeCN5PMgCriRZRaPFrSE=
+			O4V27XYOGUZs/LpgrOLrHrgUj18=
 			</data>
 			<key>hash2</key>
 			<data>
-			YRQmyNLsw+OIGBq9HNNRLD533dZYESIH5+FIJkLgTUY=
+			QNz9Wf/+WeWYi2Fpj09oJlqifcXZxz6OhxH6UgF2agQ=
+			</data>
+		</dict>
+		<key>BKMAddCardViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sOOIuXbXQc2gZq54VXvn9pijqk8=
+			</data>
+			<key>hash2</key>
+			<data>
+			e2NR6Ig2Yf54KqJSA1+UCsfHaXjH4D3FP/LkIPMYXZo=
+			</data>
+		</dict>
+		<key>BKMAddCardViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HpppsmkOh7CryjsyrfMEdU6bbNo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Is8pi3pDQu2OZxo7ENuoFGF0pw4GJ66yJi2Ecr1z7Y0=
 			</data>
 		</dict>
 		<key>BKMCardCollectionViewCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DMXW4JIZWafKDCx7IbaidtWOXBg=
+			8h9n/JSg8Yzizsku4+HVIE1as3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			D1OUyWgLbyLCjjPkZ67Lol+00GvnykUHAgOTxQ4NkQk=
+			QwHSkGJyUGobScjDd2z3pPPPVBLz3lvv5tyN9deLesI=
+			</data>
+		</dict>
+		<key>BKMCardCollectionViewCell.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KaLyE7FucoTnOicFkYzlDEZAYOg=
+			</data>
+			<key>hash2</key>
+			<data>
+			C74Q93iSSvSV/Vd8T18sumVi6bA4hfa7dDeqvG5UmdM=
 			</data>
 		</dict>
 		<key>BKMCardCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3u0Rk5iPgKWWAwcGknVbTiYdJI=
+			5xKNO0pn6uRxCDxZGmDGKnnaEXk=
 			</data>
 			<key>hash2</key>
 			<data>
-			mB4yi2G9a3RPtBAPU3uZTpzG80FfwMQTi/9/vTyGmKY=
+			Pxk0HUJn6tor9QpUgDnOab0HPDZ6OfVU+R5u1b5R9Pc=
 			</data>
 		</dict>
-		<key>BKMCardView.nib</key>
+		<key>BKMCardView.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ghtwixvos+DBsXzid+/FORt2bYg=
+			5kL8Ac+YZ/Gs4v5XtUSUfDjofO0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WSUpnw0mtzot2uEVAy5bsV3dlKQ0Y0rfrfGhuqp6Fyc=
+			UN3kPbIb6dVywJRDvUBa5q5GI2PO5rsOKy5owMPiTIs=
 			</data>
 		</dict>
-		<key>BKMCardsViewController.nib</key>
+		<key>BKMCardView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jjDHJqOZEsDcQqWaRai+discAKI=
+			CfYetS6ivzhcdi9zN/N8HGdN4M0=
 			</data>
 			<key>hash2</key>
 			<data>
-			L6uuHXsR2uvze9V3j74k1WY1zykPKmNbtWR+lzfPR9w=
+			o+A32JkpB9qoOasM5N8FRWviJqsz4rPNBzF1FJJ8KYg=
 			</data>
 		</dict>
-		<key>BKMChangeCardsForPairingViewController.nib</key>
+		<key>BKMCardsViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UYaLdizHHyCXwQrVEkLPlCxHuu8=
+			XFW4H10IeTPwJMFRRmxFhDZ+O2A=
 			</data>
 			<key>hash2</key>
 			<data>
-			ldlknZ2KjlMfN6jJn1+9gQ1Az+M416B0+jP0Ms8yw9g=
+			lJfUwKCK8+E30KRE3sumYrTQmQ3+Qfjttp5Yyi0OYXQ=
 			</data>
 		</dict>
-		<key>BKMConfirmationDialog.nib</key>
+		<key>BKMCardsViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r6fA46PYdauqv/aF1kKT8ws+Qzs=
+			b2xgHOXstI8RhjNn0//D/D804qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			FU6FJ7pH+fxtm3PZUjYA2WOCwjNFBFr+39jYHOq/IEA=
+			PYQFm/3kkGSJkgR7QyZITH6YHz11EwbCG8AEsxvG+UQ=
 			</data>
 		</dict>
-		<key>BKMContractViewController.nib</key>
+		<key>BKMChangeCardsForPairingViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q3zU25InYV5iOXaaR8tM4jtkdk0=
+			eKwsvg7b30U0AnZUhNsKo1LKxbk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Snr1nY9Y4OQ7Twi5lMn9mW6zGDoiMdqemoyeC8PrJuQ=
+			T1gxLW0MlP6C3DMYzcAr2QShXEXl2Z97i7SL+04gKqQ=
+			</data>
+		</dict>
+		<key>BKMChangeCardsForPairingViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UMz4b6vV26fqEhKhMfsVnN/LYA4=
+			</data>
+			<key>hash2</key>
+			<data>
+			gw1CsUSz+yB8SAV/Dh79xO8Mfsk5d2PwLRM72FbtoJs=
+			</data>
+		</dict>
+		<key>BKMConfirmationDialog.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aP8cxe7BRVMM6x6LAoOkpUCvDTk=
+			</data>
+			<key>hash2</key>
+			<data>
+			M559InMPXIAJFlWalZqHJo0xRBUXpNtgCGvOrwd7SnE=
+			</data>
+		</dict>
+		<key>BKMConfirmationDialog.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oc+/Fo/H7NVjHEPAIqwQt4M0Gis=
+			</data>
+			<key>hash2</key>
+			<data>
+			/VMJcrM3aA32MYRQV04HPN23/1p8bjC9RUKoCucLI+I=
+			</data>
+		</dict>
+		<key>BKMContractViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LLN7VnhhKCm1mPJYpYwC0Qt8rkw=
+			</data>
+			<key>hash2</key>
+			<data>
+			m0kmx8bFV+mGZCi0/z4r82Gy+Dqrzie598ZE3UMnwjI=
+			</data>
+		</dict>
+		<key>BKMContractViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bHIFEsMROpm+kQexXGVTx/dEA8I=
+			</data>
+			<key>hash2</key>
+			<data>
+			iY3uQps2NPgKBlX8oaAgCTapvlFDwZf0WC0JePmsT0Q=
 			</data>
 		</dict>
 		<key>BKMDonationCollectionViewCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7AkJspX5f9iHlDphAJmisb/xNG8=
+			1pM9WX7dGWvUGHOK9ltVpHWWaAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			wiB/+gG1573cyPK1VhSOsVaWcqoZxeoJW3SOx++vxq4=
+			pvGG3pxjJ3PbTQl0AOCaXt7ORWH8NXwbdemwY0ZugRs=
+			</data>
+		</dict>
+		<key>BKMDonationCollectionViewCell.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KQW7Jbp8bFGaspRrOou9N5n2ack=
+			</data>
+			<key>hash2</key>
+			<data>
+			gSIiRRO8KlQhR9WCq8g6giFbEEoUmPql8NTW3ecKbvQ=
 			</data>
 		</dict>
 		<key>BKMDonationCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sjcAWABcwFEJVM9KDJgikIC6fuQ=
+			VbgnrnY3lRgWICi0eX5gE5jicxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			LQyp3BCjuFQiUjl563w5RHg2wX3K5c+eNBH0/HIAKc8=
+			XmaXkBmvwnKOW9fp+Urk+nNva3DMcm7w2fzf9DSsIPA=
 			</data>
 		</dict>
-		<key>BKMForgotAndChangePassViewController.nib</key>
+		<key>BKMForgotAndChangePassViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VfumI9nPRBsa7Z/0SehQ1tb3xXE=
+			pNnDPma8xdh5WSdo6EacVY4Yk/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			NwRFf1fyg5siRGTq6lgIdwKslxivlj8CWww2Du1lOr4=
+			4HdHXVoeU3d20KYx5KHn9qnzTfxsrcp879Z5GwB3wbA=
 			</data>
 		</dict>
-		<key>BKMForgotPassViewController.nib</key>
+		<key>BKMForgotAndChangePassViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QR6PiGYB2UzFHvSHy+NDTh03L6E=
+			FZKgAEjaYHyuFzXZKr3RCjA/XqQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			nnzkSzo1FkBikKYE04dgqSpfz5EE1p2oK4izskC1dX4=
+			7MZpY1uRgogQIipl7AsIfI9t2qRmbEkqYO44nlOCILw=
 			</data>
 		</dict>
-		<key>BKMInstallmentTableViewCell.nib</key>
+		<key>BKMForgotPassViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z1CGTs8eVL60l/wvoiAyNywHWTc=
+			a57YM9SR6k4lsLcdYrL/j2lBGNY=
 			</data>
 			<key>hash2</key>
 			<data>
-			AcBHh6T2kh4+UjP1iNKdkuBX9NBS0noYli3C98d3GBw=
+			mRxMazHmka1RhEyqT79ggq0dodoTqciL3jl9n5i0tHI=
 			</data>
 		</dict>
-		<key>BKMInstallmentView.nib</key>
+		<key>BKMForgotPassViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smIWX4BMlQi/gQJDNl5spjUHyj4=
+			+3LtWBs4VGdOyb1MAHjDZe9hFfs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gNb7+JwY5GRgpuXi0Wg67Jozq7eGNCKeQibjpuW11IA=
+			GjIIgXjunIBdePZjc/0LuYbM7ic+vAoyqwgs7fDK4WA=
 			</data>
 		</dict>
-		<key>BKMLoadingView.nib</key>
+		<key>BKMInstallmentTableViewCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6tT3tSqIR68a6TeZJCBfTL4PSUw=
+			6pDcKLmiXRGTf9yThB8+2ihC0p4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KCBhXoTKSi0f8oUqxrvmqU8qcDMRALiUEI0hO9ro3hM=
+			oBVqSLtqAFDfGMSJl6Mlv0Fm28z6JEdD/pbeGKEwKO8=
+			</data>
+		</dict>
+		<key>BKMInstallmentTableViewCell.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8RN1U4oyhbyL+y0PT6qkOYqqcEw=
+			</data>
+			<key>hash2</key>
+			<data>
+			UsJludXwxmXhhzweZxCPOx4TMlnnInnk75gJcowbYck=
+			</data>
+		</dict>
+		<key>BKMInstallmentView.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pD2NAeuPrnrhHxJKmi/54FueArk=
+			</data>
+			<key>hash2</key>
+			<data>
+			BaQOE9eXUD7KrUSjRWnHnvbsh5DAcwb1CAaesaPk8DY=
+			</data>
+		</dict>
+		<key>BKMInstallmentView.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BqcopNxKTunXjuVeldrSXqqVxBs=
+			</data>
+			<key>hash2</key>
+			<data>
+			PWEaBTqRt+WYq3KKCTd1d5izkkXSh1Pbp5iulTw4g5c=
+			</data>
+		</dict>
+		<key>BKMLoadingView.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GvQCGelIZtd04g/6zqxXXguDD1g=
+			</data>
+			<key>hash2</key>
+			<data>
+			Szq0W9Qfh0mMzZ5PhlOMNMEHHLjaf3bJ4oCtPNQEXTA=
+			</data>
+		</dict>
+		<key>BKMLoadingView.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rPQ7oKTm2T+FM+VrBk9JRawYNGY=
+			</data>
+			<key>hash2</key>
+			<data>
+			8N67RfUYMX3hU5asnG0eIBhngnuPYw9/WjkdivMwKdk=
+			</data>
+		</dict>
+		<key>BKMLoginViewController~iphone.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Je9q/zgrvy8pEBsmljz1pm5bMYU=
+			</data>
+			<key>hash2</key>
+			<data>
+			AhoqlsL6bDrt7iXu4n5q1TTMe1peuFMiL7YRRrrIge0=
 			</data>
 		</dict>
 		<key>BKMLoginViewController~iphone.nib/objects-8.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YLY5EbQlGFYtXB7FcW9jYQnQOmw=
+			hgQPIAnyujtJv4ibSGKSRCtncOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			l2klqYVbgusw++QkeXYfwhdAXf+oU02hmb8vCjTBA78=
+			BLWBIpFrh4Eh5FhsVBTsF4m2iqCPGxHxZyfV7i37piw=
 			</data>
 		</dict>
 		<key>BKMLoginViewController~iphone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9b6LXlg7n3ay4k+VlqLtQZOxRCU=
+			idedKrv+R8x+D/28pC5nSTtvFMA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WwxIzYf7Y4uAHzGoFGm5MKyjRlV0eG/2HIDEfba8sgw=
+			3bF6+ZLUP0FjSKTfUkQvqryXrIJtaARVBArPajvdnYc=
 			</data>
 		</dict>
-		<key>BKMOTPViewController.nib</key>
+		<key>BKMOTPViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yRuPKZknmVRUyYTlL0EuJby8mRs=
+			3+VJZf1HFMX0LouTtqc69cUxwq8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GnLa9zTMZh8PYD8q/eB8T4d0dH/tOWYXD0YO0bvmrWg=
+			BnhhqbOZYl4qTY7n3r43Kw3Ayaou0tQb9FqIRjUNBAU=
 			</data>
 		</dict>
-		<key>BKMPaymentCardSelectionViewController.nib</key>
+		<key>BKMOTPViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rt1rEgPFIOh15IPv5XJewJo9vGY=
+			gbVDzfIsfQPSAEo2eSLhfz/dHPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bIBtouxwHeuwcd9E9LnTePtw/GFVEehSGaNsDBx9VGM=
+			kMqhlk+qCiOJgMzpi/78gxseRXPuUe5WwNkRqyl8+1g=
 			</data>
 		</dict>
-		<key>BKMRegisterViewController.nib</key>
+		<key>BKMPaymentCardSelectionViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jOPnzSPkw39VSreNyC1a3HJcpYM=
+			sos2BkT0TiTKWatcLbmNda6xS8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			o7ZFR0joQ0wP1UD7rBU3tZ3KMStqO8Lvi6wAS8TyPuQ=
+			L79YUtavy+E7teunPukdGH4pcLSAFnA35Lcz3fQFinw=
 			</data>
 		</dict>
-		<key>BKMSTKViewController.nib</key>
+		<key>BKMPaymentCardSelectionViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T8aO5yZThoyZZ0wZGI5fsIW26Yo=
+			hTKceJVOlGZs/9r+tc024Ovm9aI=
 			</data>
 			<key>hash2</key>
 			<data>
-			TAAl9CAkTT8Yc9f/QX8VsKqXvbNOKZiyjIu6knLxX7E=
+			7/oX6u0zP9Cuz3/Enfu5be6/ehjLPxBv+2x80b3+zHU=
+			</data>
+		</dict>
+		<key>BKMRegisterViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L3uy+ijwQmwp977LiHW1J6XxuEM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ts7WUbbOPWbRI74JG9Zu0pOV8aaNQdq/488dUvyPztg=
+			</data>
+		</dict>
+		<key>BKMRegisterViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9VT3Sg07IQQ3vWLeo6SHtbOLIeQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			yBItLUr/eIxmtBoZcM2+5dekXMcMyZwTiML/cESi/cc=
+			</data>
+		</dict>
+		<key>BKMSTKViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vy4bMGvVCNjFFrBAYRAXd95VR9w=
+			</data>
+			<key>hash2</key>
+			<data>
+			R53aGNUQ3Ah7iJVqENJjRFcZNkrl/czqcAAXjcT0Ll8=
+			</data>
+		</dict>
+		<key>BKMSTKViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nDClqGuhFtrVaTC2DBIUN6nJ7Bw=
+			</data>
+			<key>hash2</key>
+			<data>
+			15fwJXSBU7fXIaFWM4o2+ulEpt945dN/kCPSD5wDpAw=
 			</data>
 		</dict>
 		<key>Headers/BKMExpressPairViewController.h</key>
