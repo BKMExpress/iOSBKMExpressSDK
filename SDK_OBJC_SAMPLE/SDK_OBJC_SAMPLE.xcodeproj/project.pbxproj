@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B3AB59D248E6D9F007250BD /* BKMExpressSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3AB59C248E6D9E007250BD /* BKMExpressSDK.framework */; };
-		1B3AB5A3248E6DE2007250BD /* BKMExpressSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3AB59C248E6D9E007250BD /* BKMExpressSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B344A652490F5DE00532752 /* BKMExpressSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3AB59C248E6D9E007250BD /* BKMExpressSDK.framework */; };
+		1B344A662490F5DE00532752 /* BKMExpressSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3AB59C248E6D9E007250BD /* BKMExpressSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BA82685248E67F400E84781 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8267B248E67F400E84781 /* ViewController.m */; };
 		1BA82686248E67F400E84781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8267C248E67F400E84781 /* main.m */; };
 		1BA82687248E67F400E84781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8267E248E67F400E84781 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1BA826A5248E68BB00E84781 /* Embed Frameworks */ = {
+		1B344A672490F5DE00532752 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1B3AB5A3248E6DE2007250BD /* BKMExpressSDK.framework in Embed Frameworks */,
+				1B344A662490F5DE00532752 /* BKMExpressSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B3AB59D248E6D9F007250BD /* BKMExpressSDK.framework in Frameworks */,
+				1B344A652490F5DE00532752 /* BKMExpressSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 				1BA82626248E676D00E84781 /* Sources */,
 				1BA82627248E676D00E84781 /* Frameworks */,
 				1BA82628248E676D00E84781 /* Resources */,
-				1BA826A5248E68BB00E84781 /* Embed Frameworks */,
+				1B344A672490F5DE00532752 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
