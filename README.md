@@ -3,7 +3,7 @@
 
 ## SİSTEM GEREKSİNİMLERİ NELERDİR?
 
- *  Min iOS-7 desteklenmektedir.
+ *  iOS 9.0 ve üzeri versiyonlarda desteklenmektedir.
  *  iPhone cihazlar desteklenmektedir. 
 
 ## NASIL ÇALIŞIR?
@@ -26,11 +26,9 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 ### IOS OBJECTIVE-C SDK ENTEGRASYONU
 
- SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
+* SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
 
-* BEX.bundle, include klasörü ve libBKMExpressSDK.a  dosyaları projeye eklenmelidir.
-
-* Eklenecek uygulamanın Build Settings ayarlarından Other Linker Flags anahtarına –ObjC değeri yazılmalıdır.
+        pod 'BKMExpressSDK', '1.2.3'
 
 * BKMExpress SDK arayüzlerinden geri haber alabilmek için BKMExpressPairingDelegate ve BKMExpressPaymentDelegate protokollerinin kullanılması gerekmektedir.
 
@@ -120,14 +118,12 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 ### IOS SWIFT SDK ENTEGRASYONU
 
- SDK kullanmak için şu sıra ile uygulamaya eklenmelidir:
+* SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
 
-* BEX.bundle, include klasörü ve libBKMExpressSDK.a  dosyaları projeye eklenmelidir.
+        pod 'BKMExpressSDK', '1.2.3'
 
 * Objective C ile geliştiren SDK'yı kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
   https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
-
-* Eklenecek uygulamanın Build Settings ayarlarından Other Linker Flags anahtarına –ObjC değeri yazılmalıdır.
 
 * BKMExpress SDK arayüzlerinden geri haber alabilmek için BKMExpressPairingDelegate ve BKMExpressPaymentDelegate protokollerinin kullanılması gerekmektedir.
 
@@ -180,6 +176,3 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     func bkmExpressPaymentDidCancel() {
         NSLog("Payment is cancelled by user")
     }
-
-
-
