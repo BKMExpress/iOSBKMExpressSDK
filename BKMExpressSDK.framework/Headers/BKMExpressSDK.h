@@ -9,3 +9,4 @@
 #import <UIKit/UIKit.h>
 #import <BKMExpressSDK/BKMExpressPaymentViewController.h>
 #import <BKMExpressSDK/BKMExpressPairViewController.h>
+#import <BKMExpressSDK/BKMExpressOTPVerifyController.h>
