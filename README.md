@@ -30,7 +30,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
         pod 'BKMExpressSDK', '1.2.7'
 
-* BKMExpress SDK arayüzlerinden geri haber alabilmek için BKMExpressPairingDelegate ve BKMExpressPaymentDelegate protokollerinin kullanılması gerekmektedir.
+* BKMExpress SDK arayüzlerinden geri haber alabilmek için kullandığınız akışa göre BKMExpressPairingDelegate, BKMExpressPaymentDelegate ve BKMExpressOTPVerifyDelegate protokollerinin kullanılması gerekmektedir.
 
 
 ### BKMExpressPairingDelegate
@@ -48,6 +48,15 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     -  (void)bkmExpressPaymentDidCancel; //Cancel
 
     -  (void)bkmExpressPaymentDidFail:(NSError *)error; //Fail
+
+### BKMExpressOTPVerifyDelegate
+
+    -  (void)bkmExpressOTPVerified; //Success 
+
+    -  (void)bkmExpressOTPCanceled; //Cancel
+
+    -  (void)bkmExpressOTPFailed:(NSError *)error; //Fail    
+
 
 ### ÖRNEK OBJECTIVE-C ÖDEME AKIŞI KULLANIMI
       
@@ -113,6 +122,35 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     - (void)bkmExpressPairingDidCancel{
         NSLog(@"Card pairing is canceled by user");
     }
+
+### ÖRNEK OTP'Lİ HIZLI ÖDEME DOĞRULAMA AKIŞI KULLANIMI
+      
+    #define kOTP_PAYMENT_VERIFY_TICKET  @"OTP Payment ticket will be given by BKM after the merchant integration"
+    
+    @interface ViewController () <BKMExpressOTPVerifyDelegate>
+
+    - (IBAction)tapOTPPaymentButton:(id)sender {
+       BKMExpressOTPVerifyController *vc = [[BKMExpressOTPVerifyController alloc] initWithTicket:kOTP_PAYMENT_VERIFY_TICKET delegate:self];
+        // YES:PreProd, NO:Prod
+       [vc setEnableDebugMode:YES];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+       [self presentViewController:vc animated:YES completion:nil];
+    }
+    
+	#pragma Otp payment verification delegate methods
+
+	- (void)bkmExpressOTPVerified {
+	     NSLog(@"Successful OTP payment verification");
+	}
+
+	- (void)bkmExpressOTPCanceled {
+	     NSLog(@"OTP Payment verification is canceled by user");
+	}
+
+	- (void)bkmExpressOTPFailed:(NSError *)error {
+	     NSLog(@"An error has occurred on payment = %@", error.localizedDescription);
+	}
+
 
 
 

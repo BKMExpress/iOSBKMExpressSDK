@@ -8,8 +8,7 @@
 
 import UIKit
 
-let kQUICK_PAY_TOKEN:String =     "Quick pay token will be given by BKM after the merchant integration"
-let kPAYMENT_TOKEN:String   =      "Payment token will be given by BKM after the merchant integration"
+let kPAYMENT_TOKEN:String   = "Payment token will be given by BKM after the merchant integration"
 
 class ViewController: UIViewController , BKMExpressPaymentDelegate {
 
@@ -24,14 +23,14 @@ class ViewController: UIViewController , BKMExpressPaymentDelegate {
 
         instanceOfCustomObject.setEnableDebugMode(true)
         instanceOfCustomObject.modalPresentationStyle = .fullScreen
-        
         self.present(instanceOfCustomObject , animated:true,completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    #pragma mark - Payment Methods
     
     func bkmExpressPaymentDidComplete(with posResult: BKMPOSResult!) {
         NSLog("Successful payment with POS message")

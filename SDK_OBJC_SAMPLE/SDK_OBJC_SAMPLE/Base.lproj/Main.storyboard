@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bj6-XV-mK5">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bj6-XV-mK5">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -50,11 +48,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSJ-PF-SQa">
-                                <rect key="frame" x="22.666666666666657" y="309" width="330" height="61"/>
+                                <rect key="frame" x="26" y="309" width="323" height="61"/>
                                 <color key="backgroundColor" red="0.24513730410000001" green="0.54387372730000005" blue="0.61963844300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="aV1-b0-tJO"/>
-                                    <constraint firstAttribute="width" constant="330" id="c9e-OL-unS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
                                 <state key="normal" title="Kart Değiştir">
@@ -70,14 +67,39 @@
                                     <action selector="tapChangeCardButton:" destination="Bj6-XV-mK5" eventType="touchUpInside" id="as7-B8-uF9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-Jm-TV0">
+                                <rect key="frame" x="26" y="405" width="323" height="61"/>
+                                <color key="backgroundColor" red="0.24513730410000001" green="0.54387372730000005" blue="0.61963844300000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="OS2-X6-haa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="20"/>
+                                <state key="normal" title="OTP ile Hızlı Öde">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapOTPPaymentButton:" destination="Bj6-XV-mK5" eventType="touchUpInside" id="v2B-PV-iZm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zS8-Zm-27B" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="3kc-rk-U9f"/>
                             <constraint firstItem="vxn-yX-ldt" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="3r3-lx-jcW"/>
                             <constraint firstItem="vxn-yX-ldt" firstAttribute="top" secondItem="zS8-Zm-27B" secondAttribute="bottom" constant="26" id="KiZ-V7-eAT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2fx-Jm-TV0" secondAttribute="trailing" constant="10" id="bIq-nA-gq7"/>
+                            <constraint firstItem="2fx-Jm-TV0" firstAttribute="top" secondItem="ZSJ-PF-SQa" secondAttribute="bottom" constant="35" id="bvD-pl-mkE"/>
                             <constraint firstItem="zS8-Zm-27B" firstAttribute="top" secondItem="hJU-ng-fIa" secondAttribute="bottom" constant="30" id="fJY-Bg-gvW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSJ-PF-SQa" secondAttribute="trailing" constant="10" id="hni-0l-hYK"/>
                             <constraint firstItem="ZSJ-PF-SQa" firstAttribute="centerX" secondItem="I8O-op-h5h" secondAttribute="centerX" id="kGj-Lb-rc5"/>
+                            <constraint firstItem="ZSJ-PF-SQa" firstAttribute="leading" secondItem="I8O-op-h5h" secondAttribute="leadingMargin" constant="10" id="m2K-lG-PC0"/>
+                            <constraint firstItem="2fx-Jm-TV0" firstAttribute="leading" secondItem="I8O-op-h5h" secondAttribute="leadingMargin" constant="10" id="rMr-4o-Sym"/>
                             <constraint firstItem="ZSJ-PF-SQa" firstAttribute="top" secondItem="vxn-yX-ldt" secondAttribute="bottom" constant="35" id="zat-tU-dCa"/>
                         </constraints>
                     </view>
@@ -88,7 +110,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bkm-ode" width="343" height="87"/>
-        <image name="bkm-ode-1" width="248" height="98"/>
+        <image name="bkm-ode" width="343.5" height="87.5"/>
+        <image name="bkm-ode-1" width="248.5" height="98"/>
     </resources>
 </document>

@@ -9,11 +9,12 @@
 #import "ViewController.h"
 #import <BKMExpressSDK/BKMExpressSDK.h>
 
-#define kQUICK_PAY_TOKEN     @"Quick pay token will be given by BKM after the merchant integration"
-#define kPAIRING_TICKET      @"Ticket will be given by BKM after the merchant integration"
-#define kPAYMENT_TOKEN       @"Payment token will be given by BKM after the merchant integration"
+#define kQUICK_PAY_TOKEN            @"Quick pay token will be given by BKM after the merchant integration"
+#define kPAIRING_TICKET             @"Ticket will be given by BKM after the merchant integration"
+#define kPAYMENT_TOKEN              @"Payment token will be given by BKM after the merchant integration"
+#define kOTP_PAYMENT_VERIFY_TICKET  @"OTP Payment ticket will be given by BKM after the merchant integration"
 
-@interface ViewController () <BKMExpressPairingDelegate,BKMExpressPaymentDelegate>
+@interface ViewController () <BKMExpressPairingDelegate,BKMExpressPaymentDelegate,BKMExpressOTPVerifyDelegate>
 @end
 
 @implementation ViewController
@@ -33,6 +34,14 @@
     BKMExpressPairViewController *vc = [[BKMExpressPairViewController alloc] initWithTicket:kPAIRING_TICKET withDelegate:self];
     [vc setEnableDebugMode:NO];
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)tapOTPPaymentButton:(id)sender {
+    BKMExpressOTPVerifyController *vc = [[BKMExpressOTPVerifyController alloc] initWithTicket:kOTP_PAYMENT_VERIFY_TICKET withDelegate:self];
+     // YES:PreProd, NO:Prod
+    [vc setEnableDebugMode:YES];
+     vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -57,6 +66,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+
 #pragma Payment delegate methods
 
 - (void)bkmExpressPaymentDidCompleteWithPOSResult:(BKMPOSResult *)posResult{
@@ -74,5 +84,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+
+#pragma Otp Payment delegate methods
+
+- (void)bkmExpressOTPVerified {
+     NSLog(@"Successful OTP payment verification");
+}
+
+- (void)bkmExpressOTPCanceled {
+     NSLog(@"OTP Payment verification is canceled by user");
+}
+
+- (void)bkmExpressOTPFailed:(NSError *)error {
+     NSLog(@"An error has occurred on payment = %@", error.localizedDescription);
+}
+
 
 @end
