@@ -130,7 +130,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
     @interface ViewController () <BKMExpressOTPVerifyDelegate>
 
     - (IBAction)tapOTPPaymentButton:(id)sender {
-       BKMExpressOTPVerifyController *vc = [[BKMExpressOTPVerifyController alloc] initWithTicket:kOTP_PAYMENT_VERIFY_TICKET delegate:self];
+       BKMExpressOTPVerifyController *vc = [[BKMExpressOTPVerifyController alloc] initWithTicket:kOTP_PAYMENT_VERIFY_TICKET withDelegate:self];
         // YES:PreProd, NO:Prod
        [vc setEnableDebugMode:YES];
         vc.modalPresentationStyle = UIModalPresentationFullScreen;

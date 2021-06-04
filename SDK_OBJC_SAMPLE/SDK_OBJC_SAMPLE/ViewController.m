@@ -37,14 +37,6 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (IBAction)tapOTPPaymentButton:(id)sender {
-    BKMExpressOTPVerifyController *vc = [[BKMExpressOTPVerifyController alloc] initWithTicket:kOTP_PAYMENT_VERIFY_TICKET withDelegate:self];
-     // YES:PreProd, NO:Prod
-    [vc setEnableDebugMode:YES];
-     vc.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:vc animated:YES completion:nil];
-}
-
 #pragma Pairing delegate methods
 
 - (void)bkmExpressPairingDidComplete:(NSString *)first6Digits withLast2Digits:(NSString *)last2Digits{
@@ -66,7 +58,6 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-
 #pragma Payment delegate methods
 
 - (void)bkmExpressPaymentDidCompleteWithPOSResult:(BKMPOSResult *)posResult{
@@ -85,6 +76,13 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)tapOTPPaymentButton:(id)sender {
+    BKMExpressOTPVerifyController *vc = [[BKMExpressOTPVerifyController alloc] initWithTicket:kOTP_PAYMENT_VERIFY_TICKET withDelegate:self];
+     // YES:PreProd, NO:Prod
+    [vc setEnableDebugMode:YES];
+     vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 #pragma Otp Payment delegate methods
 
@@ -99,6 +97,5 @@
 - (void)bkmExpressOTPFailed:(NSError *)error {
      NSLog(@"An error has occurred on payment = %@", error.localizedDescription);
 }
-
 
 @end
