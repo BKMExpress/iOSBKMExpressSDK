@@ -28,7 +28,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 * SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
 
-        pod 'BKMExpressSDK', '1.2.9'
+        pod 'BKMExpressSDK', '1.2.10'
 
 * BKMExpress SDK arayüzlerinden geri haber alabilmek için kullandığınız akışa göre BKMExpressPairingDelegate, BKMExpressPaymentDelegate ve BKMExpressOTPVerifyDelegate protokollerinin kullanılması gerekmektedir.
 
@@ -158,7 +158,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 * SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
 
-        pod 'BKMExpressSDK', '1.2.8'
+        pod 'BKMExpressSDK', '1.2.10'
 
 * Objective C ile geliştiren SDK'yı kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
   https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
