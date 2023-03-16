@@ -30,7 +30,7 @@ class ViewController: UIViewController , BKMExpressPaymentDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    #pragma mark - Payment Methods
+    // MARK: Payment Methods
     
     func bkmExpressPaymentDidComplete(with posResult: BKMPOSResult!) {
         NSLog("Successful payment with POS message")

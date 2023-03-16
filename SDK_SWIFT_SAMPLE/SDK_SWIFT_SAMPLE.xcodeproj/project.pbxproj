@@ -3,27 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060E235029C36571001F1047 /* BKMExpressSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060E234F29C36571001F1047 /* BKMExpressSDK.xcframework */; };
+		060E235129C36571001F1047 /* BKMExpressSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 060E234F29C36571001F1047 /* BKMExpressSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BA82696248E682F00E84781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8268C248E682F00E84781 /* Assets.xcassets */; };
 		1BA82698248E682F00E84781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8268F248E682F00E84781 /* AppDelegate.swift */; };
 		1BA82699248E682F00E84781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA82690248E682F00E84781 /* ViewController.swift */; };
 		1BA8269A248E682F00E84781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA82692248E682F00E84781 /* LaunchScreen.storyboard */; };
 		1BA8269B248E682F00E84781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA82694248E682F00E84781 /* Main.storyboard */; };
-		1BE91D2124937C6700E7FEE3 /* BKMExpressSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3AB5A0248E6DBA007250BD /* BKMExpressSDK.framework */; };
-		1BE91D2224937C6700E7FEE3 /* BKMExpressSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3AB5A0248E6DBA007250BD /* BKMExpressSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1BE91D2324937C6700E7FEE3 /* Embed Frameworks */ = {
+		060E235229C36572001F1047 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1BE91D2224937C6700E7FEE3 /* BKMExpressSDK.framework in Embed Frameworks */,
+				060E235129C36571001F1047 /* BKMExpressSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		060E234F29C36571001F1047 /* BKMExpressSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BKMExpressSDK.xcframework; path = ../BKMExpressSDK.xcframework; sourceTree = "<group>"; };
 		1B3AB5A0248E6DBA007250BD /* BKMExpressSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BKMExpressSDK.framework; path = ../BKMExpressSDK.framework; sourceTree = "<group>"; };
 		1BA82662248E67C900E84781 /* SDK_SWIFT_SAMPLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_SWIFT_SAMPLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA8268C248E682F00E84781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BE91D2124937C6700E7FEE3 /* BKMExpressSDK.framework in Frameworks */,
+				060E235029C36571001F1047 /* BKMExpressSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +97,7 @@
 		1BA8269C248E68A500E84781 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				060E234F29C36571001F1047 /* BKMExpressSDK.xcframework */,
 				1B3AB5A0248E6DBA007250BD /* BKMExpressSDK.framework */,
 			);
 			name = Frameworks;
@@ -111,7 +113,7 @@
 				1BA8265E248E67C900E84781 /* Sources */,
 				1BA8265F248E67C900E84781 /* Frameworks */,
 				1BA82660248E67C900E84781 /* Resources */,
-				1BE91D2324937C6700E7FEE3 /* Embed Frameworks */,
+				060E235229C36572001F1047 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
