@@ -3,7 +3,7 @@
 
 ## SİSTEM GEREKSİNİMLERİ NELERDİR?
 
- *  iOS 9.0 ve üzeri versiyonlarda desteklenmektedir.
+ *  iOS 11.0 ve üzeri versiyonlarda desteklenmektedir.
  *  iPhone cihazlar desteklenmektedir. 
 
 ## NASIL ÇALIŞIR?
@@ -28,7 +28,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 * SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
 
-        pod 'BKMExpressSDK', '1.2.11'
+        pod 'BKMExpressSDK', '1.2.12'
 
 * BKMExpress SDK arayüzlerinden geri haber alabilmek için kullandığınız akışa göre BKMExpressPairingDelegate, BKMExpressPaymentDelegate ve BKMExpressOTPVerifyDelegate protokollerinin kullanılması gerekmektedir.
 
@@ -158,7 +158,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 * SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
 
-        pod 'BKMExpressSDK', '1.2.11'
+        pod 'BKMExpressSDK', '1.2.12'
 
 * Objective C ile geliştiren SDK'yı kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
   https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
