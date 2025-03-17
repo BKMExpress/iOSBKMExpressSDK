@@ -1,6 +1,6 @@
 framework module BKMExpressSDK {
   umbrella header "BKMExpressSDK.h"
-
   export *
+
   module * { export * }
 }
