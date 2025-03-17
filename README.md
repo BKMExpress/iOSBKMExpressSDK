@@ -26,9 +26,6 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 ## ENTEGRASYON
-> SDK'yi kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
-  https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
-
 **Cocoapods** kullanarak aşağıdaki komutla:
 
       pod 'BKMExpressSDK', '1.2.13'
