@@ -3,7 +3,8 @@
 
 ## SİSTEM GEREKSİNİMLERİ NELERDİR?
 
- *  iOS 11.0 ve üzeri versiyonlarda desteklenmektedir.
+ *  iOS **11.0** ve üzeri versiyonlarda desteklenmektedir. 
+    * *Swift Package Manager kullanılması halinde sürüm* **iOS 12.0** *üzeri olmalıdır.*
  *  iPhone cihazlar desteklenmektedir. 
 
 ## NASIL ÇALIŞIR?
@@ -24,14 +25,30 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 
-### IOS OBJECTIVE-C SDK ENTEGRASYONU
+## ENTEGRASYON
 
-* SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
+**Cocoapods** kullanarak aşağıdaki komutla:
 
-        pod 'BKMExpressSDK', '1.2.12'
+      pod 'BKMExpressSDK', '1.2.13'
 
-* BKMExpress SDK arayüzlerinden geri haber alabilmek için kullandığınız akışa göre BKMExpressPairingDelegate, BKMExpressPaymentDelegate ve BKMExpressOTPVerifyDelegate protokollerinin kullanılması gerekmektedir.
+**Swift Package Manager** kullanarak:
+  - Projenizin "Package Dependencies" kısmından gerekli sürüm bilgisini girerek 
+  
+  *veya*
+  
+  - Başka bir Swift Package içinde kullanılacaksa:
+       1. Package.swift dosyanızdaki "dependencies" parametresi içerisine bağımlılığı ekledikten sonra
+       
+              .package(url: "https://github.com/BKMExpress/iOSBKMExpressSDK.git", exact: "1.12.13")
+          
+       2. Bağımlılığı kullanmak istediğiniz target'in "dependencies" kısmına SDK'nin product'ını ekleyerek
+      
+              .product(name: "BKMExpressSDK", package: "iOSBKMExpressSDK")
+              
+SDK'yi kullanabilirsiniz.
 
+## DELEGASYON
+> BKMExpress SDK arayüzlerinden geri haber alabilmek için kullandığınız akışa göre BKMExpressPairingDelegate, BKMExpressPaymentDelegate ve BKMExpressOTPVerifyDelegate protokollerinin kullanılması gerekmektedir.
 
 ### BKMExpressPairingDelegate
 
