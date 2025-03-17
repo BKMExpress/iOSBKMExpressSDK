@@ -26,6 +26,8 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 
 
 ## ENTEGRASYON
+> SDK'yi kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
+  https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
 
 **Cocoapods** kullanarak aşağıdaki komutla:
 
@@ -170,18 +172,7 @@ SDK'yi kullanabilirsiniz.
 
 
 
-
-### IOS SWIFT SDK ENTEGRASYONU
-
-* SDK Cocoapods kullanılarak aşağıdaki komut ile projeye eklenmelidir.
-
-        pod 'BKMExpressSDK', '1.2.12'
-
-* Objective C ile geliştiren SDK'yı kullanabilmek icin Bridge yapılmalıdır. Aşağıdaki adreste daha detaylı bilgiler bulabilirsiniz:
-  https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
-
-* BKMExpress SDK arayüzlerinden geri haber alabilmek için BKMExpressPairingDelegate ve BKMExpressPaymentDelegate protokollerinin kullanılması gerekmektedir.
-
+## ÖRNEK SWIFT KULLANIMI
 
 ### BKMExpressPaymentDelegate
 
