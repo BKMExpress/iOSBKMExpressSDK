@@ -170,19 +170,6 @@ SDK'yi kullanabilirsiniz.
 	     NSLog(@"An error has occurred on payment = %@", error.localizedDescription);
 	}
 
-
-
-## ÖRNEK SWIFT KULLANIMI
-
-### BKMExpressPaymentDelegate
-
-    -  func bkmExpressPaymentDidComplete(with posResult: BKMPOSResult!); //Success 
-
-    -  func bkmExpressPaymentDidCancel(); //Cancel
-
-    -  func bkmExpressPaymentDidFail(_ error: Error!) { //Fail
-
-
 ### ÖRNEK SWIFT ÖDEME AKIŞI KULLANIMI
       
     let kQUICK_PAY_TOKEN:String = "Quick pay token will be given by BKM after the merchant integration"
