@@ -28,7 +28,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
 ## ENTEGRASYON
 **Cocoapods** kullanarak aşağıdaki komutla:
 
-      pod 'BKMExpressSDK', '1.2.13'
+      pod 'BKMExpressSDK', '1.2.14'
 
 **Swift Package Manager** kullanarak:
   - Projenizin "Package Dependencies" kısmından gerekli sürüm bilgisini girerek 
@@ -38,7 +38,7 @@ Kart eşleme paketi iki farklı ortamda çalışmaktadır.
   - Başka bir Swift Package içinde kullanılacaksa:
        1. Package.swift dosyanızdaki "dependencies" parametresi içerisine bağımlılığı ekledikten sonra
        
-              .package(url: "https://github.com/BKMExpress/iOSBKMExpressSDK.git", exact: "1.12.13")
+              .package(url: "https://github.com/BKMExpress/iOSBKMExpressSDK.git", exact: "1.12.14")
           
        2. Bağımlılığı kullanmak istediğiniz target'in "dependencies" kısmına SDK'nin product'ını ekleyerek
       
